@@ -1,0 +1,32 @@
+---
+galaxy_info:
+  author: Andrew Rothstein
+  description: installs grabssh
+  company: BlackRock
+  license:
+    - MIT
+  min_ansible_version: 2.0
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Alpine
+      versions:
+        - all
+  galaxy_tags:
+    - ssh
+    - screen
+    - development
+
+dependencies:
+  - role: andrewrothstein.bash
+    version: v1.0.0
+  - role: andrewrothstein.screen
+    version: v1.0.0
+  
