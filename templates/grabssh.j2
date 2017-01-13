@@ -8,5 +8,5 @@ for x in ${SSHV} ; do
     (eval echo $x=\$$x) | sed  's/=/="/
                                 s/$/"/
                                 s/^/export /'
-done 1>{{grabssh_fixssh_path}}
-chmod 600 {{grabssh_fixssh_path}}
+done 1>{{grabssh_fixssh}}
+chmod 600 {{grabssh_fixssh}}
