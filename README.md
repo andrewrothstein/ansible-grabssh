@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-grabssh.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-grabssh)
 andrewrothstein.grabssh
 =========
 
@@ -35,4 +36,4 @@ MIT
 Author Information
 ------------------
 
-Andrew Rothstein andrew.rothstein@gmail.com
+Andrew Rothstein <andrew.rothstein@gmail.com>
