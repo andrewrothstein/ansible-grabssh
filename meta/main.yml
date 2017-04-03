@@ -26,7 +26,7 @@ galaxy_info:
 
 dependencies:
   - role: andrewrothstein.bash
-    version: v1.0.0
+    version: v1.0.1
   - role: andrewrothstein.screen
-    version: v1.0.0
+    version: v1.0.1
   
