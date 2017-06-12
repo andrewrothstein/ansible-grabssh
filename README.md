@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-grabssh.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-grabssh)
 andrewrothstein.grabssh
 =========
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-grabssh.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-grabssh)
 
 Utilities for working with ssh agents across broken connections. Inspired by [this](http://samrowe.com/wordpress/ssh-agent-and-gnu-screen/)
 
