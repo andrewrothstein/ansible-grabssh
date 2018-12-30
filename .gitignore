@@ -1,3 +1,6 @@
 **~
 *.retry
 .ansible-roles/
+*.swp
+requirements.yml
+Dockerfile.*

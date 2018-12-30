@@ -31,5 +31,6 @@ dependencies:
   - role: andrewrothstein.bash
     version: v1.1.1
   - role: andrewrothstein.screen
-    version: v1.0.3
-  
+    version: v1.0.5
+  - role: andrewrothstein.tmux
+    version: v1.0.1
