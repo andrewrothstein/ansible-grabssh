@@ -1,36 +1,34 @@
----
+dependencies:
+- role: andrewrothstein.bash
+  version: v1.1.3
+- role: andrewrothstein.screen
+  version: v1.0.5
+- role: andrewrothstein.tmux
+  version: v1.0.1
 galaxy_info:
   author: Andrew Rothstein
-  description: installs grabssh
   company: BlackRock
+  description: installs grabssh
+  galaxy_tags:
+  - ssh
+  - screen
+  - development
   license:
-    - MIT
+  - MIT
   min_ansible_version: 2.0
   platforms:
-    - name: EL
-      versions:
-        - all
-    - name: Fedora
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - all
-    - name: Alpine
-      versions:
-        - all
-    - name: Debian
-      versions:
-        - jessie
-  galaxy_tags:
-    - ssh
-    - screen
-    - development
-
-dependencies:
-  - role: andrewrothstein.bash
-    version: v1.1.1
-  - role: andrewrothstein.screen
-    version: v1.0.5
-  - role: andrewrothstein.tmux
-    version: v1.0.1
+  - name: EL
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Alpine
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - jessie
