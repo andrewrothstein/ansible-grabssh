@@ -2,9 +2,9 @@ dependencies:
 - role: andrewrothstein.bash
   version: v1.1.3
 - role: andrewrothstein.screen
-  version: v1.0.5
+  version: v1.0.6
 - role: andrewrothstein.tmux
-  version: v1.0.1
+  version: v1.0.2
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
