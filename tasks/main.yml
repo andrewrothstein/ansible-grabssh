@@ -1,18 +1,22 @@
 ---
-- name: shell creature comforts
+- name: install grabssh
   become: yes
   become_user: root
   with_items:
     - f: grabssh
       d: '{{ grabssh_bin_path }}'
-      m: '0755'
-    - f: grabssh-screen.sh
-      d: /etc/profile.d
-      m: '0644'
-    - f: grabssh.sh
-      d: /etc/profile.d
-      m: '0644'
   template:
     src: '{{ item.f }}.j2'
     dest: '{{ item.d }}/{{ item.f }}'
-    mode: '{{ item.m }}'
+    mode: '{{ item.m | default("0755") }}'
+- name: shell creature comforts
+  become: yes
+  become_user: root
+  with_items:
+    - grabssh.sh
+    - grabssh-screen.sh
+    - grabssh-tmux.sh
+  template:
+    src: '{{ item }}.j2'
+    dest: '{{ grabssh_shell_snippets_dir }}/{{ item }}'
+    mode: '0644'

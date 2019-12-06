@@ -2,3 +2,4 @@
 # defaults file for grabssh
 grabssh_bin_path: /usr/local/bin
 grabssh_fixssh: ~/.fixssh
+grabssh_shell_snippets_dir: /etc/profile.d
