@@ -1,0 +1,3 @@
+---
+grabssh_privilege_escalation: false
+grabssh_shell_snippets_dir: /usr/local/etc/profile.d

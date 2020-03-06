@@ -1,6 +1,16 @@
 ---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
 - name: install grabssh
-  become: yes
+  become: '{{ grabssh_privilege_escalation }}'
   become_user: root
   with_items:
     - f: grabssh
@@ -10,7 +20,7 @@
     dest: '{{ item.d }}/{{ item.f }}'
     mode: '{{ item.m | default("0755") }}'
 - name: shell creature comforts
-  become: yes
+  become: '{{ grabssh_privilege_escalation }}'
   become_user: root
   with_items:
     - grabssh.sh
